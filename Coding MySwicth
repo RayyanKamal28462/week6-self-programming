@@ -1,0 +1,56 @@
+package myswitch;
+
+import java.util.Scanner;
+
+public class MySwicth {
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int mark;
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Please enter your mark: ");
+		mark = sc.nextInt();
+		mark = mark / 10;
+   
+     
+        
+        switch(mark/10){
+        	
+        case 10 :
+            System.out.println("if marks >= 90 then Excellent: Grade A");
+        break;
+        
+        case 9 :
+            System.out.println("if marks >= 90 and less than 80 then Very Good: Grade B");
+        break;
+        
+        case 8:
+        System.out.println("if marks >= 80 and less than 70 them Good :Grade C");
+        
+        case 7:
+            System.out.println("if marks >= 70 and less than 60 then Good :Grade D");
+        break ;
+        	
+        case 6:
+            System.out.println("if marks >= 60 and less than 50 then Good :Grade E");
+        break ;
+        
+        
+        case 5:
+            System.out.println("if mark <= 50 and less then 40 then Just Passed : Grade F");
+             break ;
+        
+        default:
+            System.out.println("If any other marks then print Failed!");
+    
+}
+sc.close();
+}
+
+
+
+	}
+
+
